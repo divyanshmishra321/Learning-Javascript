@@ -1,2 +1,2 @@
 console.log("divyansh mishra");
-alert("hello div");
+console.log("hello divyansh ");
