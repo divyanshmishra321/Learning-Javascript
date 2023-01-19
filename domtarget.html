@@ -150,23 +150,23 @@
 
     <script>
 
-        // <-----DEMONSTRATION OF DOM TARGETING IS GIVEN BELOW---->
+        // <----- ✅✅  DEMONSTRATION OF DOM TARGETING IS GIVEN BELOW  ✅✅---->
         var a = document.getElementsByClassName("nav-item-link"); //this will target the element by using class name 
         var a = document.getElementById("links"); //This will target the element using id.
         // console.log(a);
 
-        // <---- DEMONSTRATION OF GET  VALUE IS GIVEN BELOW ---->
+        // <----👇👇 DEMONSTRATION OF GET  VALUE IS GIVEN BELOW 👇👇  ---->
 
         // We can get Total three things in javascript 
         // 1- Html
         // 2-Text
         // 3-Attribute
         // we can do this using some javascript methods and some common are given below 
-        // .innerHTML
-        // .innerText
-        // .getAttribute
-        // .getAttributeNode
-        // .Attributes
+        // .innerHTML-- can change the inner html of that element 
+        // .innerText-- can change the inner text of that element 
+        // .getAttribute-- can get and displays the particular  attribute  of that element tag 
+        // .getAttributeNode--can get and displays the particular  attribute  of that element tag 
+        // .Attributes--can get and displays the all the attributes of that element tag 
 
         // NOW LETS SEE IMPLIMENTATION USING ALL THESE METHODS 
 
@@ -186,21 +186,21 @@
 
 
 
-        // <---- DEMONSTRATION OF TO SET VALUE IS GIVEN BELOW ---->
+        // <----  👇👇 DEMONSTRATION OF TO SET VALUE IS GIVEN BELOW 👇👇 ---->
 
-         // we can do this using some javascript methods and some common are given below 
-        // .innerHTML
-        // .innerText
-        // .setAttribute
-        // .Attributes
-        // .removeAttribute
+        // we can do this using some javascript methods and some common are given below 
+        // .innerHTML--can change the inner html of that element 
+        // .innerText-- can change the inner text of that element 
+        // .setAttribute-- change and sets the new value for that attribute
+        // .Attributes---- Get and displays all the Attributes of that particular html element 
+        // .removeAttribute--- this will remove particular attribute from a html element.
 
         // NOW LETS SEE IMPLIMENTATION USING ALL THESE METHODS 
-        var element = document.getElementById("header").innerText="hello";  //This will change and  set the text which is available inside that id element to "hello"
-        var element = document.getElementById("header").innerHTML="<h1> HELLO </h1>";  //This will change and SET the HTML which is available inside that id element to "HELLO"
-        var element = document.getElementById("header").setAttribute("class","xyz");  //This will change and SET the class of that element to XYZ
+        var element = document.getElementById("header").innerText = "hello";  //This will change and  set the text which is available inside that id element to "hello"
+        var element = document.getElementById("header").innerHTML = "<h1> HELLO </h1>";  //This will change and SET the HTML which is available inside that id element to "HELLO"
+        var element = document.getElementById("header").setAttribute("class", "xyz");  //This will change and SET the class of that element to XYZ
         var element = document.getElementById("header").removeAttribute("style"); //This will remove the targeted attribute from that element like in this case "style" attribute is removed from that element. 
-        
+
         console.log(element);
 
 
