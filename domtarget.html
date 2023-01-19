@@ -68,32 +68,32 @@
         a {
             color: black;
             text-decoration: none;
-            
+
         }
 
         .nav-items2 .nav-item-link {
             display: flex;
             padding: 10px;
         }
-        .nav-items a{
+
+        .nav-items a {
             padding: 0px 30px;
             font-size: 20px;
             font-weight: 600;
         }
 
-        .footer{
+        .footer {
             border: 1px solid black;
             margin: 4px 0px;
             text-align: center;
             background-color: rgb(244, 166, 166);
         }
-        nav
     </style>
 </head>
 
 <body class="container">
 
-    <header id="header">
+    <header id="header" style="border: 2px solid rgb(223, 171, 0);" class="header">
         <h1>DIVYANSH MISHRA BLOG </h1>
     </header>
 
@@ -149,8 +149,61 @@
     </footer>
 
     <script>
-        var a = document.getElementsByClassName("nav-item-link");
-        console.log(a);
+
+        // <-----DEMONSTRATION OF DOM TARGETING IS GIVEN BELOW---->
+        var a = document.getElementsByClassName("nav-item-link"); //this will target the element by using class name 
+        var a = document.getElementById("links"); //This will target the element using id.
+        // console.log(a);
+
+        // <---- DEMONSTRATION OF GET  VALUE IS GIVEN BELOW ---->
+
+        // We can get Total three things in javascript 
+        // 1- Html
+        // 2-Text
+        // 3-Attribute
+        // we can do this using some javascript methods and some common are given below 
+        // .innerHTML
+        // .innerText
+        // .getAttribute
+        // .getAttributeNode
+        // .Attributes
+
+        // NOW LETS SEE IMPLIMENTATION USING ALL THESE METHODS 
+
+        var element = document.getElementById("links").innerText;  //This will display the text which is available inside that id element
+        var element = document.getElementById("header").innerHTML;  //This will display the HTML  which is available inside that id element
+        var element = document.getElementById("header").getAttribute("id");  //This will display the id attribute of that HTML part or tag  which is available inside that id element.
+        var element = document.getElementById("header").getAttribute("style");  //This will display the style attribute of that HTML part or tag  which is available inside that id element.
+        var element = document.getElementById("header").getAttributeNode("style");  //This will display the particular attribute of that HTML part or tag  which is available inside that id element.
+        var element = document.getElementById("header").attributes;  //This will display the All the  attribute of that HTML part or tag  which is available inside that id element.
+
+        // The Difference Between getAttribute() and getAttributeNode()
+        // The getAttribute() method returns the value of an attribute. 
+        // The getAttributeNode() method returns an Attr object, 
+        // and you must use the Attr value property to get the value. The result will be the same. if u use this then result will be same as getattribute() method 
+
+        // console.log(element)
+
+
+
+        // <---- DEMONSTRATION OF TO SET VALUE IS GIVEN BELOW ---->
+
+         // we can do this using some javascript methods and some common are given below 
+        // .innerHTML
+        // .innerText
+        // .setAttribute
+        // .Attributes
+        // .removeAttribute
+
+        // NOW LETS SEE IMPLIMENTATION USING ALL THESE METHODS 
+        var element = document.getElementById("header").innerText="hello";  //This will change and  set the text which is available inside that id element to "hello"
+        var element = document.getElementById("header").innerHTML="<h1> HELLO </h1>";  //This will change and SET the HTML which is available inside that id element to "HELLO"
+        var element = document.getElementById("header").setAttribute("class","xyz");  //This will change and SET the class of that element to XYZ
+        var element = document.getElementById("header").removeAttribute("style"); //This will remove the targeted attribute from that element like in this case "style" attribute is removed from that element. 
+        
+        console.log(element);
+
+
 
     </script>
 </body>
