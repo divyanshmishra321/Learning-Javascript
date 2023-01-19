@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            height: 100%;
+            /* width: 100%; */
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .container {
+            margin: 2vw;
+            padding: 1vw;
+            border: 2px dashed rgb(56, 56, 56);
+
+        }
+
+        #header {
+            border: 1px solid blue;
+            background-color: beige;
+            padding: 10px;
+            text-align: center;
+
+        }
+
+        .navbar {
+            background-color: antiquewhite;
+            border: 1px solid red;
+            padding: 10px;
+            margin: 4px 0px;
+
+
+        }
+
+        .mainsection {
+            display: flex;
+            /* gap: 20%; */
+            border: 1px solid blue;
+        }
+
+        .section1 {
+            width: 80%;
+            /* border: 1px solid blue; */
+            text-align: justify;
+            padding: 10px;
+            background-color: azure;
+
+
+        }
+
+        .section2-sidebar {
+            /* border: 1px solid blue; */
+            width: 20%;
+            background-color: antiquewhite;
+            padding: 20px;
+            text-align: center;
+
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+            
+        }
+
+        .nav-items2 .nav-item-link {
+            display: flex;
+            padding: 10px;
+        }
+        .nav-items a{
+            padding: 0px 30px;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .footer{
+            border: 1px solid black;
+            margin: 4px 0px;
+            text-align: center;
+            background-color: rgb(244, 166, 166);
+        }
+        nav
+    </style>
+</head>
+
+<body class="container">
+
+    <header id="header">
+        <h1>DIVYANSH MISHRA BLOG </h1>
+    </header>
+
+    <nav class="navbar">
+        <div class="nav-items">
+
+            <a href="#" class="nav-item-link">Home</a>
+            <a href="#" class="nav-item-link">Result</a>
+            <a href="#" class="nav-item-link">Center</a>
+            <a href="#" class="nav-item-link">Site</a>
+        </div>
+    </nav>
+
+    <main class="mainsection">
+        <section class="section1">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non corporis voluptate blanditiis expedita,
+                ullam labore aperiam! Facere, necessitatibus dignissimos! Id totam sit magnam ducimus possimus, minima
+                eius porro. Unde vitae, consequatur, illum autem accusamus eligendi et impedit minus, tempore provident
+                voluptas doloribus perspiciatis voluptatem ipsam ipsa aperiam optio? Recusandae aliquam sunt minus rem
+                non? Exercitationem iure soluta officia sapiente recusandae, quos commodi iusto molestiae repudiandae
+                quae ipsa, obcaecati quod non voluptatem. Eveniet, non asperiores nobis maiores magnam nisi est atque
+                eius vitae libero porro hic commodi sit eligendi ipsam beatae quae mollitia dolores ex eos quod
+                voluptas. Quidem, pariatur odit.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab impedit saepe a facere quibusdam minima
+                unde molestias? Natus nulla architecto, ipsam illum rerum excepturi earum adipisci maxime non neque
+                laborum dignissimos debitis nihil maiores a assumenda voluptatibus voluptates optio veritatis enim,
+                tempora ipsa? Eligendi aspernatur tempore explicabo excepturi quae neque suscipit ratione ut incidunt,
+                nam nisi in animi veniam velit amet doloribus quidem! Ab ratione aliquam error ullam, molestiae est
+                eligendi sunt quod non nostrum odio maxime, voluptate recusandae, odit sed laboriosam architecto fugit
+                commodi veniam doloremque dolores labore placeat! Animi at quo nobis numquam eaque? Inventore deleniti
+                nisi earum culpa ex unde quas facilis quidem assumenda optio deserunt officia nesciunt quibusdam neque
+                modi magni repellat, eligendi doloribus, consequatur voluptates est iste aspernatur dolore ullam? Nulla
+                optio odit, quaerat cupiditate deleniti maiores sapiente. Molestiae incidunt nostrum odit alias ab
+                beatae, officiis praesentium. Fugit deleniti consectetur unde ipsa id asperiores porro. Voluptatem, aut
+                itaque tenetur eveniet obcaecati maxime harum numquam, praesentium soluta ex alias! Deleniti dolorem
+                suscipit consectetur perspiciatis ipsum veritatis in! Dicta aut cum officiis quas officia sapiente ex,
+                enim iste quae laborum dolor a reprehenderit non necessitatibus magnam iure beatae dolore culpa fuga.
+                Odit minus temporibus architecto totam debitis.</p>
+        </section>
+
+        <section class="section2-sidebar">
+            <div id="links" class="nav-items2">
+                <a href="#" class="nav-item-link">Home</a>
+                <a href="#" class="nav-item-link">Result</a>
+                <a href="#" class="nav-item-link">Center</a>
+                <a href="#" class="nav-item-link">Site</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <h5>Divyansh Mishra - Copyright-2021</h5>
+    </footer>
+
+    <script>
+        var a = document.getElementsByClassName("nav-item-link");
+        console.log(a);
+
+    </script>
+</body>
+
+</html>

@@ -1,4 +1,4 @@
-const age=29;
+const age=;
 if (age>=18 && age<=21) {
     console.log("You are Eligible");
     

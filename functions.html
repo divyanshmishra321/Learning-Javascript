@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+//From here we will be learning about js function 
+function age(){
+ const a=prompt("what is your age ");
+ if (a<=18) {
+    document.write("you are Under Age");
+ } else {
+    document.write("You are Eligible ")
+ }
+} 
+
+
+
+function sum(a,b){
+     var result=a+b;
+     document.write(result);
+}
+
+
+function hello(fname="Divyansh", lname="Mishra"){
+    document.write("hello " + fname + " " + lname);
+} //these are variables with thier default values 
+
+//here overiding the values of variable happening 
+
+//Demonstration of return value 
+function name(fname="Divyansh", lname="Mishra"){
+    var name=fname+" "+lname;
+    return name;
+
+} 
+
+// var result=name("ram", "singh");
+// document.write(result);
+
+
+//function for percentage of subjects 
+
+function sum3( math,eng,sc){
+    var result= math+eng+sc
+    return result;
+}
+
+function percentage(total){
+    var percent=total/300*100;
+   document.write("The Percentage is"+percent);
+}
+
+var answer=sum3(20,30,40);
+
+percentage(answer);
+ 
+
+    </script>
+
+    <button onclick="sum(12,23)">Click here</button>
+</body>
+</html>

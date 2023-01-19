@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = confirm("do you want to continue")
+
+if (a==true ) {
+    document.write("Hello my friend");
+}
+else{
+    document.write("gaand marao bc")
+}
+
+
+var a= prompt("Whats your Age bro ");
+
+if (a<=18) {
+    document.write("You Are Not Eligible ")
+    
+} else {
+    document.write("You Are Welcome ")
+    
+}
+//From here we will be learning about js function 
+function age(){
+ const a=prompt("what is your age ");
+ if (a<=18) {
+    document.write("you are Under Age");
+ } else {
+    document.write("You are Eligible ")
+ }
+} 
+
+
+
+function sum(a,b){
+     var result=a+b;
+     document.write(result);
+}
+
+    </script>
+
+    <button onclick="sum(12,23)">Click here</button>
+</body>
+</html>

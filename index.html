@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Letter of Recommendation</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        /* Add some basic styling to give the page a letter-like appearance */
+        .container {
+            border: 5px solid black;
+            max-width: 800px;
+            min-width: 30vw;
+            margin: 0 auto;
+            font-size: 18px;
+            line-height: 1.4;
+            font-family: 'Arial Narrow', Arial, sans-serif;
+            padding-right: 10%;
+            /* display: flex; */
+        }
+
+        .maincontainer {
+            display: flex;
+        }
+
+        /* Add a header and footer to the page */
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+            margin-top: 30px;
+            color: rgb(240, 128, 255);
+        }
+
+        .header h4 {
+            margin-top: 30px;
+            font-size: 26px;
+            font-weight: bold;
+            text-transform: uppercase;
+
+        }
+
+
+
+        /* input field customization */
+
+        input {
+            border-style: none;
+            width:auto;
+            padding: 0;
+            margin: 0;
+            
+
+        }
+
+        #content {
+            text-align: justify;
+            padding: 30px;
+        }
+
+        #ruler {
+            border-bottom: 3px solid black;
+        }
+
+        #logo {
+            display: flex;
+        }
+
+        #logo img {
+            /* max-height: 50px; */
+            height: auto;
+            max-width: 40%;
+
+        }
+
+        #triangle {
+            width: 0;
+            height: 0;
+            border-top: 100px solid red;
+            border-left: 100px solid transparent;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+
+    <div class="container">
+
+        <div class="header">
+            <div id="logo">
+                <img src="peershala.png" alt="peershala logo">
+            </div>
+
+            <div id="ruler"></div>
+            <h4>Letter of Recommendation</h4>
+        </div>
+        <div id="content">
+
+
+            <p>Dear <input type="text" id="name" placeholder="[Enter Your Name Here]"></p>
+
+            <p>I am writing to recommend <span id="name">[Name]</span> . [He/She]worked with us at Peershala as a
+                <input type="text"
+                id="jobtitle" placeholder="[Enter your Job Role ]">.  and worked with me in my position as <span id="jobtitle">[Job Title]</span>
+            </p>
+
+
+            <p> <span id="name">[Name]</span> is a delight to work with and I wouldn’t hesitate to hire
+                [him/her/them] again.
+
+                Should you have any further questions about [him/her/them], feel free to reach me at [phone number].
+
+                Thanks,
+            </p>
+
+
+            <p>I’ve always put a premium on sticking by the deadline, determination, and hard work among my team
+                members and [name] never failed to deliver.</p>
+
+            <p>I <span id="name">[Name]</span> is a delight to work with and I wouldn’t hesitate to hire
+                [him/her/them] again.
+
+                Should you have any further questions about [him/her/them], feel free to reach me at [phone number].
+            </p>
+            <p>Sincerely,</p>
+            <p>[Your Name]</p>
+        </div>
+
+
+
+
+    </div>
+
+    <script>
+        // Get the input field
+        var roleInput = document.getElementById("jobtitle");
+
+        // Get all elements with the same class name
+        var roleElements = document.querySelectorAll("#jobtitle");
+
+        // Listen for changes in the input field
+        roleInput.addEventListener("input", function () {
+            // Get the current value of the input field
+            var role = roleInput.value;
+
+            // Update the text of all elements with the same class name
+            for (let i = 0; i < roleElements.length; i++) {
+                roleElements[i].innerHTML = role;
+            }
+        });
+
+        var nameInput = document.getElementById("name");
+
+        // Get all elements with the same ID
+        var nameElements = document.querySelectorAll("#name");
+
+        // Listen for changes in the input field
+        nameInput.addEventListener("input", function () {
+            // Get the current value of the input field
+            var name = nameInput.value;
+
+            // Update the text of all elements with the same ID
+            nameElements.forEach(function (nameElement) {
+                nameElement.textContent = name;
+            });
+        });
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // SINGLE DIMENSIONAL ARRAY TAKING ELEMENT FORM USER AND PRINTS THEM 
+        // var a = new Array()
+        // for (var i = 0; i<3; i++) {
+        //    a[i]= prompt("Enter your Element")
+        //    document.write(a[i] + "<br>")
+        // }
+
+
+
+        // MULTI DIMENSIONAL ARRAY IN JAVASCRIPT 
+
+        var array = [
+
+            ["harry", 10, "male", "bcom"],
+            ["divyansh", 19, "male", "bca"],
+            ["harsh", 20, "male", "bsc"],
+            ["ankit", 30, "male", "bca"],
+            ["amit", 40, "male", "mcom"],
+            ["harry", 10, "male", "bcom"],
+            ["divyansh", 19, "male", "bca"],
+            ["harsh", 20, "male", "bsc"],
+            ["ankit", 30, "male", "bca"],
+            ["amit", 40, "male", "mcom"],
+        ]
+       
+        // for loop to print multi dimensional array 
+        for (var i = 0; i < array.length; i++) {
+            for (var j = 0; j < array[i].length; j++) {
+                document.write(array[i] [j] + "");
+            }
+            document.write("<br>");
+            
+        }
+       
+        
+    </script>
+</body>
+
+</html>
