@@ -7,4 +7,6 @@ console.log(filtered);
 // Mapping of an array
 let numbers=[2,3,4,5,4,5,9,0];
 let items=numbers.map(value=>'Student_no '+ value);
-console.log(items);
+console.log(items); 
+
+
