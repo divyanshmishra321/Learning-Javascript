@@ -63,12 +63,57 @@ let person = {
     this.Lname = parts[1];
   }
 };
-// Calling GETTER 
+// Calling GETTER
 console.log(person.Fullname);
 
 // Calling SETTER
 person.Fullname='Sagar Mishra';
 console.log(person.Fullname);
 
-  
+function SaveMyname() {
+  console.log("This is function");
+}
+// Calling Function
+SaveMyname(); //this is calling function
 
+// Returning some output from function
+// 1st Way
+function addTwoNumbers(num1, num2) {
+  let result = num1 + num2;
+  return result;
+}
+// 2nd way
+function addTwoNumber(num1, num2) {
+  return num1 + num2;
+}
+console.log(addTwoNumber(3, 5));
+console.log(addTwoNumbers(3, 5));
+
+// function to check whether the user is LoggedIn or not
+function UserLoggin(username) {
+  if (username === undefined) {
+    return `Please enter username`;
+  }
+  return `${username} just logged in`;
+}
+console.log(UserLoggin("Divyansh"));
+
+// Function for shopping cart price calculation using Rest Operator
+function calculateCartPrice(...num1) {
+  return num1;
+}
+console.log(calculateCartPrice(200, 400, 500));
+
+const user={
+  username:"Divyansh",
+  price:999
+}
+
+function handleObject(anyobject) {
+  console.log(`username is ${anyobject.username} and price is ${anyobject.price}`)
+}
+handleObject(user);
+handleObject({
+  user:"Rohit",
+  Price:9999
+})
